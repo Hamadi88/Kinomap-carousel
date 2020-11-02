@@ -1,0 +1,48 @@
+body , html {  
+    margin : 0;
+    display : grid;
+    grid-template-rows: auto 1fr auto ;
+    background: rgb(127,0,255);
+    background: linear-gradient(22deg, rgba(127,0,255,0.7745) 20%, rgba(15,5,107,0.77884) 46%, rgba(90, 177, 228, 0.778) 74%, rgba(77, 151, 194, 0.685) 91%);
+    height: 100%;
+    width: 100%;
+}
+
+/* TAILLE DES IMAGES ET LA TRANSITION DU ZOOM*/
+.img-fluid {
+        width:15vw ;
+        height:15vh ;
+        margin:20px;
+        padding:20px;
+        transition :transform .4s;
+}
+
+/* CLASS DES SLIDE*/
+.carousel-inner{
+    position :relative;
+    top: 40%;
+    width: 50vw;
+    box-shadow:9px 8px 8px 9px #aaa ;
+    
+}
+
+/* HOVER IMAGE*/
+.img-fluid:hover{
+    cursor:pointer;
+    transform:scale(1.08);
+    background-color:#f0ece7;
+    border-radius: 8% 8% 8% 8% ;
+
+}
+
+/* LE CONTENEUR PARENT DU CAROUSEL*/
+#recipeCarousel{
+    position: absolute;
+    top :15%;
+    height:50vh;
+    left:20%;
+    right: 20%;
+    margin-top:10px,
+}
+
+
